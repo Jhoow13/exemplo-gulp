@@ -6,18 +6,25 @@ var uglify = require('gulp-uglify');
 
 var appFiles = {
     htmlfiles:[
-    
+        './src/html/**/**/*.html'
     ],
     cssFiles:[
-    
+        './src/css/**/**/*.css'
+    ],
+    cssDependences:[
+        './node_modules/bootstrap/dist/css/bootstrap.css'
     ],
     jsFiles: [
-               
+        './src/js/**/**/*.js'
+    ],
+    jsDependences:[
+        './node_modules/jquery/dist/jquery.js',
+        './node_modules/moment/moment.js'
     ]
 };
 
 gulp.task('clean', function(){
-    return gulp.src('src/*')
+    return gulp.src('build/*')
     .pipe(clean());
 });
 
