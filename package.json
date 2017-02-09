@@ -1,7 +1,7 @@
 {
   "name": "exemplo-gulp",
   "version": "1.0.0",
-  "description": "projeto exemplo com tasks do gulp (sitepoint.com/introduction-gulp-js)",
+  "description": "projeto exemplo com tasks do gulp",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "gulp": "^3.9.1",
     "jquery": "^3.1.1",
     "momentjs": "^2.0.0"
